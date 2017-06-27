@@ -17,7 +17,7 @@ import database
 
 from tensorflow.examples.tutorials.mnist import input_data
 data = input_data.read_data_sets('data/MNIST', one_hot = True)
-logs_path = '/tmp/tensorflow_logs/nigger/v.6'
+logs_path = 'tensorboard'
 if not os.path.exists(logs_path):
     os.makedirs(logs_path)
     
@@ -103,7 +103,7 @@ nn.optimize(1, load = False)
 
 # In[7]:
 
-nn.optimize(6, load = True)
+nn.optimize(16, load = True)
 
 
 # In[9]:
